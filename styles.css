@@ -1,0 +1,99 @@
+/* Genel kutucuk stilini belirle */
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover durumunda animasyonları uygula */
+  .box:hover {
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+  /* Bounce animasyonu */
+  .bounce:hover {
+    animation-name: bounce;
+  }
+  
+  /* Rotate animasyonu */
+  .rotate:hover {
+    animation-name: rotate;
+  }
+  
+  /* Fade animasyonu */
+  .fade:hover {
+    animation-name: fade;
+  }
+  
+  /* Shake animasyonu */
+  .shake:hover {
+    animation-name: shake;
+  }
+  
+  /* Scale animasyonu */
+  .scale:hover {
+    animation-name: scale;
+  }
+  
+  /* Keyframes tanımları */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fade {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+  
+  @keyframes scale {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
